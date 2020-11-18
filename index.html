@@ -113,8 +113,29 @@
     <section class='contact'>
       <div class='contact'>
         <h2>Send me a message. I'm usually online so your answer wont be too far away!</h2>
+        <form action="mailto:ljcallaghan64@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
+          <div>
+            <label for="name">Name:
+              <input type="text" name="name" id="name" />
+            </label>
+          </div>
+          <div>
+            <label for="email">Email:
+              <input type="text" name="email" id="email" />
+            </label>
+          </div>
+          <div>
+            <label>Body of your email:</label>
+            <br />
+            <textarea name="body" rows="12" cols="35">Send a message!</textarea>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Send" />
+            <input type="reset" name="reset" value="Clear Form" />
+          </div>
+        </form>
         <ul>
-          <li><p></p><span>Email: </span>ljcallaghan64@gmail.com</p></li>
+          <!-- <li><p></p><span>Email: </span>ljcallaghan64@gmail.com</p></li> -->
           <li><p></p><span>LinkedIn: </span><a href='https://www.linkedin.com/in/ljcallaghan64/'>linkedin.com/in/ljcallaghan64/</a></p></li>
           <li><p></p><span>Github: </span><a href='https://github.com/LiamCallaghan'>github.com/LiamCallaghan</a></p></li>
         </ul>
