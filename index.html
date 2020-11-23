@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='styles/main.css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='styles/main.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <title>Liam Callaghan</title>
     <script src='scripts/app.js' charset='utf-8'></script>
-    <title>Liam Callaghan</title>
+    <!-- <script src="https://www.goodreads.com/review/custom_widget/125005586.Liam's%20bookshelf:%20currently-reading?cover_position=left&cover_size=small&num_books=5&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1605971878&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script> -->
 </head>
 <body>
     <section class='hero'>
@@ -56,7 +57,7 @@
       <div>
         <h2>Past experience...</h2>
         <div class='london'>
-          <image src='https://i.imgur.com/dF184Fy.jpg' alt='london skyline'>
+          <img class='area-photo show-on-scroll' src='/assets/london.jpg' alt='london skyline' width='600' height='500'>
           <div>
             <div class='example'>
               <h3>Software Engineering Immersive</h3>
@@ -100,7 +101,7 @@
           </div>
         </div>
         <div class='preston'>
-          <image src='https://i.imgur.com/dF184Fy.jpg' alt='countryside'>
+          <img class='area-photo show-on-scroll' src='/assets/preston.jpg' alt='countryside' width='600' height='500'>
           <div class='example'>
             <h3>Housekeeping Staff</h3>
             <h3>Ashton Lodge Guest House - 2016 to 2017</h3>
@@ -110,7 +111,7 @@
           </div>
         </div>
         <div class='thredbo'>
-          <image src='https://i.imgur.com/dF184Fy.jpg' alt='kiama lodge'>
+          <img class='area-photo show-on-scroll' src='/assets/kiama.jpg' alt='kiama lodge' width='600' height='500'>
           <div class='example'>
             <h3>Assistant Management</h3>
             <h3>Kiama Alpine Club - 2012 to 2016</h3>
@@ -122,28 +123,45 @@
         </div>
       </div>
     </Section>
+    <section class='reading'>
+      <h2>Currently reading:</h2>
+      <div class='book'>
+        <div class='book-part'>
+          <a href='https://www.goodreads.com/review/show/3655980504?utm_medium=api&amp;utm_source=custom_widget'><img alt='A Fire Upon the Deep' src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1333915005l/77711._SY75_.jpg' /></a>
+        </div>
+        <div class='book-part'>
+          <a href='https://www.goodreads.com/review/show/3655980504?utm_medium=api&amp;utm_source=custom_widget'>A Fire Upon the Deep</a>
+        </div>
+        <div class='book-part'>
+          by <a href='https://www.goodreads.com/author/show/44037.Vernor_Vinge'>Vernor Vinge</a>
+        </div>
+        <div class='book-part'>
+          powered by <a href='https://www.goodreads.com/'>Goodreads</a>
+        </div>
+      </div>
+    </section>
     <section class='contact'>
       <div class='contact'>
         <h2>Send me a message. I'm usually online so your answer wont be too far away!</h2>
-        <form action="mailto:ljcallaghan64@gmail.com" method="get" enctype="application/x-www-form-urlencoded">
+        <form action='mailto:ljcallaghan64@gmail.com' method='get' enctype='application/x-www-form-urlencoded'>
           <div>
-            <label for="name">Name:
-              <input type="text" name="name" id="name" />
+            <label for='name'>Name:
+              <input type='text' name='name' id='name' />
             </label>
           </div>
           <div>
-            <label for="email">Email:
-              <input type="text" name="email" id="email" />
+            <label for='email'>Email:
+              <input type='text' name='email' id='email' />
             </label>
           </div>
           <div>
             <label>Body of your email:</label>
             <br />
-            <textarea name="body" rows="12" cols="35">Send a message!</textarea>
+            <textarea name='body' rows='12' cols='35' placeholder="Send a message!"></textarea>
           </div>
           <div>
-            <input type="submit" name="submit" value="Send" />
-            <input type="reset" name="reset" value="Clear Form" />
+            <input type='submit' name='submit' value='Send' />
+            <input type='reset' name='reset' value='Clear Form' />
           </div>
         </form>
         <ul>
