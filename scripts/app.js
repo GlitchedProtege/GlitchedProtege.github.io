@@ -30,6 +30,8 @@ function init() {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     )
   }
+  // first time scrolling through/in view add primed, second time add is visible
+
 
   let carouselNum = 0
 
