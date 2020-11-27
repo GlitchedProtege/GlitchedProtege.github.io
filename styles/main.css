@@ -148,7 +148,7 @@ body section{
 }
 
 .contact * {
-  text-align: left;
+  text-align: center;
 }
 
 .reading {
@@ -175,4 +175,74 @@ body section{
 .book a {
   text-decoration: none;
   color: white;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.project {
+  width: 100%;
+  display: none;
+}
+
+.project.selected {
+  display: inline;
+}
+
+.projectInfo {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.projectDesc {
+  width: 30%;
+  padding: 0% 10%;
+}
+
+.projectTech {
+  width: 30%;
+  padding: 0% 10%;
+}
+
+.techList {
+  display: flex;
+  text-align: center;
+}
+
+.contact a {
+  color: white;
+}
+
+.contact p {
+  font-size: 20px;
+}
+
+.contact label {
+  font-size: 20px;
+}
+
+.contact textarea {
+  text-align: left;
+}
+
+.email {
+  width: 40%;
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%; 
+}
+
+.button {
+  background-color: white;
+  color: black;
+  margin-top: 4%;
+  padding: 4%;
 }

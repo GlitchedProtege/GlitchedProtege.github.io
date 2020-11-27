@@ -30,27 +30,83 @@
     <section class='skills'>
       <div>
         <ul>
-          <li><i class="devicon-django-plain"></i></li>
-          <li><i class="devicon-github-plain-wordmark"></i></li>
-          <li><i class="devicon-html5-plain-wordmark"></i></li>
-          <li><i class="devicon-git-plain-wordmark"></i></li>
-          <li><i class="devicon-css3-plain-wordmark"></i></li>
+          <li><i class="devicon-django-plain"></i><span>Django</span></li>
+          <li><i class="devicon-github-plain"></i><span>GitHub</span></li>
+          <li><i class="devicon-html5-plain"></i><span>HTML5</span></li>
+          <li><i class="devicon-git-plain"></i><span>Git</span></li>
+          <li><i class="devicon-css3-plain"></i><span>CSS3</span></li>
           <li><i class="devicon-javascript-plain"></i><span>JavaScript</span></li>
-          <li><i class="devicon-mongodb-plain-wordmark"></i></li>
-          <li><i class="devicon-npm-original-wordmark"></i></li>
+          <li><i class="devicon-mongodb-plain"></i><span>MongoDB</span></li>
+          <li><i class="devicon-npm-original-wordmark"></i><span>NPM</span></li>
           <li><i class="devicon-nodejs-plain"></i><span>NodeJS</span></li>
-          <li><i class="devicon-react-original-wordmark"></i></li>
-          <li><i class="devicon-python-plain-wordmark"></i></li>
-          <li><i class="devicon-sass-original"></i></li>
+          <li><i class="devicon-react-original"></i><span>React</span></li>
+          <li><i class="devicon-python-plain"></i><span>Python</span></li>
+          <li><i class="devicon-sass-original"></i><span>Sass</span></li>
           <li><i class="devicon-slack-plain"></i><span>Slack</span></li>
-          <li><i class="devicon-trello-plain-wordmark"></i></li>
-          <li><i class="devicon-visualstudio-plain-wordmark"></i></li>
-          <li><i class="devicon-yarn-plain-wordmark"></i></li>
-          <li><i class="devicon-postgresql-plain-wordmark"></i></li>
-          <li><i class="devicon-heroku-original-wordmark"></i></li>
-          <li><i class="devicon-express-original-wordmark"></i></li>
+          <li><i class="devicon-trello-plain"></i><span>Trello</span></li>
+          <li><i class="devicon-visualstudio-plain"></i><span>VS Code</span></li>
+          <li><i class="devicon-yarn-plain"></i><span>Yarn</span></li>
+          <li><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></li>
+          <li><i class="devicon-heroku-original"></i><span>Heroku</span></li>
+          <li><i class="devicon-express-original"></i><span>Express</span></li>
           <li><i class="devicon-gimp-plain"></i><span>Gimp</span></li>
         </ul>
+      </div>
+    </section>
+    <section class='projects'>
+      <h1>Projects</h1>
+      <div class='carousel'>
+        <button class='prev'>Previous</button>
+        <div class='project one'>
+          <h2>Clean up crew</h2>
+          <div class='projectInfo'>
+            <p class='projectDesc'>A simple game clone built with HTML, CSS & JavaScript to be displayed in the browser. Developed over 7 days.</p>
+            <div class='projectTech'>
+              <h3>Technologies used</h3>
+              <ul>
+                <li>- JavaScript</li>
+                <li>- CSS</li>
+                <li>- HTML5 with Audio element</li>
+                <li>- Git</li>
+                <li>- Github</li>
+              </ul>
+            </div>
+          </div>
+          <img src='/assets/cleanuplandingpage.png' alt='Clean up crew landing page' width='700' height='500'>
+        </div>
+        <div class='project two'>
+          <h2>Hackathon Quiz</h2>
+          <div class='projectInfo'>
+            <p class='projectDesc'>A React app built with the OpenTriviaDB API. Pair coded over 48 hours.</p>
+            <div class='projectTech'>
+              <h3>Technologies used</h3>
+              <div class='techList'>
+                <ul>
+                  <li>- JavaScript</li>
+                  <li>- React.js</li>
+                  <li>- Bulma</li>
+                  <li>- Git</li>
+                  <li>- Sass</li>
+                </ul>
+                <ul>
+                  <li>- Yarn</li>
+                  <li>- HTML5</li>
+                  <li>- Insomnia</li>
+                  <li>- Axios</li>
+                  <li>- OpenTriviaDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img src='/assets/quizlandingpage.jpg' alt='Quiz landing page' width='700' height='500'>
+        </div>
+        <div class='project three'>
+          <h1>Project 3</h1>
+        </div>
+        <div class='project four'>
+          <h1>Project 4</h1>
+        </div>
+        <button class='next'>Next</button>
       </div>
     </section>
     <Section class='experience'>
@@ -143,31 +199,27 @@
     <section class='contact'>
       <div class='contact'>
         <h2>Send me a message. I'm usually online so your answer wont be too far away!</h2>
-        <form action='mailto:ljcallaghan64@gmail.com' method='get' enctype='application/x-www-form-urlencoded'>
-          <div>
-            <label for='name'>Name:
-              <input type='text' name='name' id='name' />
-            </label>
-          </div>
-          <div>
-            <label for='email'>Email:
-              <input type='text' name='email' id='email' />
-            </label>
-          </div>
+        <form action='mailto:ljcallaghan64@gmail.com' method='get' enctype='application/x-www-form-urlencoded' class='email'>
           <div>
             <label>Body of your email:</label>
             <br />
             <textarea name='body' rows='12' cols='35' placeholder="Send a message!"></textarea>
           </div>
-          <div>
-            <input type='submit' name='submit' value='Send' />
-            <input type='reset' name='reset' value='Clear Form' />
+          <div class='info'>
+            <label for='name'>Name:
+              <input type='text' name='name' id='name' />
+            </label>
+            <label for='email'>Email:
+              <input type='text' name='email' id='email' />
+            </label>
+            <input class='button' type='submit' name='submit' value='Send' />
+            <input class='button' type='reset' name='reset' value='Clear Form' />
           </div>
         </form>
         <ul>
-          <!-- <li><p></p><span>Email: </span>ljcallaghan64@gmail.com</p></li> -->
-          <li><p></p><span>LinkedIn: </span><a href='https://www.linkedin.com/in/ljcallaghan64/'>linkedin.com/in/ljcallaghan64/</a></p></li>
-          <li><p></p><span>Github: </span><a href='https://github.com/LiamCallaghan'>github.com/LiamCallaghan</a></p></li>
+          <!-- <li><p><span>Email: </span>ljcallaghan64@gmail.com</p></li> -->
+          <li><p><span>LinkedIn: </span><a href='https://www.linkedin.com/in/ljcallaghan64/'>linkedin.com/in/ljcallaghan64/</a></p></li>
+          <li><p><span>Github: </span><a href='https://github.com/LiamCallaghan'>github.com/LiamCallaghan</a></p></li>
         </ul>
       </div>
     </section>
