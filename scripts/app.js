@@ -4,32 +4,75 @@ function init() {
     window.setTimeout(callback, 1000 / 60)
   }
   const elementsToShow = document.querySelectorAll('.show-on-scroll')
-  function loop() {
+  // const firstElement = document.querySelector('.show-on-scroll1')
+  // const secondElement = document.querySelector('.show-on-scroll2')
 
+  function loop() {
+    
     elementsToShow.forEach(function (element) {
       if (isElementInViewport(element)) {
         element.classList.add('is-visible')
       } else {
-        element.classList.remove('is-visible')
+        // element.classList.remove('is-visible')
+        return
       }
     })
-  
+    
     scroll(loop)
   }
   loop()
+  // switchLoop()
+  // switchLoop2()
+  
   function isElementInViewport(el) {
     const rect = el.getBoundingClientRect()
     return (
       (rect.top <= 0
         && rect.bottom >= 0)
-      ||
-      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-      ||
-      (rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+        ||
+        (rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     )
   }
+  
+  // function switchLoop() {
+    
+  //   if (isElementInViewport(firstElement)) {
+  //     firstElement.classList.add('is-visible')
+  //     secondElement.classList.add('primed')
+  //     switchLoop2()
+  //     // console.log('weast')
+  //   } else {
+  //     firstElement.classList.remove('is-visible')
+  //   }
+  //   scroll(switchLoop)
+  // }
+  
+  // function switchLoop2() {
+  //   const primedElement = document.querySelector('.primed')
+  //   if (isElementInViewport(primedElement)) {
+  //     primedElement.classList.add('is-visible')
+  //     firstElement.classList.add('primed')
+  //     primedElement.classList.remove('primed')
+  //     // console.log('weast')
+  //   } else {
+  //     secondElement.classList.remove('is-visible')
+  //   }
+  //   scroll(switchLoop2)
+  // }
+
+  // function switchLoop() {
+
+  //   if (isElementInViewport(firstElement)) {
+  //     firstElement.classList.add('is-visible')
+  //   } else {
+  //     firstElement.classList.remove('is-visible')
+  //   }
+  //   scroll(switchLoop)
+  // }
   // first time scrolling through/in view add primed, second time add is visible
 
 

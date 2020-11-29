@@ -127,6 +127,17 @@ body section{
   transition: opacity .6s .25s ease-out;
 }
 
+.area-photo2 {
+  position: absolute;
+  bottom: 0px;
+}
+
+.displayThing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .area-photo.is-visible {
   opacity: 1;
 }
