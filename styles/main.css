@@ -4,6 +4,10 @@
   font-family: 'Play', sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
 body section{
   margin-top: 200px;
   margin-bottom: 200px;
@@ -15,7 +19,7 @@ body section{
 
 .hero {
   /* background-color: aliceblue; */
-  padding: 1px;
+  /* padding: 1px; */
   margin-top: 0px;
   /* height: fit-content; */
 }
@@ -59,8 +63,8 @@ body section{
 
 .skills li {
   justify-content: center;
-  border: 1px dashed white;
-  border-radius: 5%;
+  /* border: 1px dashed white; */
+  /* border-radius: 5%; */
   width: 90px;
   height: 90px;
   padding-top: 5px;
@@ -108,7 +112,7 @@ body section{
   margin-top: 50px;
   /* background-color: purple; */
   padding-right: 7%;
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .example h3 {
@@ -170,7 +174,7 @@ body section{
   /* background-color: darkblue; */
   width: 20%;
   margin-left: 40%;
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .book-part {
@@ -256,4 +260,18 @@ body section{
   color: black;
   margin-top: 4%;
   padding: 4%;
+}
+
+.prev {
+  background-color: black;
+  color: white;
+  margin: 25% 0%;
+  /* border-style: none; */
+}
+
+.next {
+  background-color: black;
+  color: white;
+  margin: 25% 0%;
+  /* border-style: none; */
 }
