@@ -166,8 +166,18 @@ body section{
   text-align: center;
 }
 
-.reading {
+.interests {
   /* background-color: firebrick; */
+  display: flex;
+  flex-direction: row;
+}
+
+.currently-playing {
+  width: 50%;
+}
+
+.currently-reading {
+  width: 50%;
 }
 
 .book {
