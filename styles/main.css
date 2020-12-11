@@ -169,14 +169,35 @@ body section{
 .interests {
   /* background-color: firebrick; */
   display: flex;
+  flex-direction: column;
+}
+
+.interestsTopText {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20%;
+  /* padding-bottom: -20%; */
+  margin-left: 10%;
+  width: 80%;
+}
+
+.interestsTopText img {
+  border-radius: 50%;
+}
+
+.interestsInfo {
+  /* margin-top: -20%; */
+  display: flex;
   flex-direction: row;
 }
 
 .currently-playing {
+  margin-top: 0%;
   width: 50%;
 }
 
 .currently-reading {
+  margin-top: 0%;
   width: 50%;
 }
 
@@ -238,6 +259,11 @@ body section{
 .techList {
   display: flex;
   text-align: center;
+  width: fit-content;
+}
+
+.p3 {
+  margin-left: -20%;
 }
 
 .contact a {
