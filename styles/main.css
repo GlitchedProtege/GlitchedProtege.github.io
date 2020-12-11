@@ -186,7 +186,7 @@ body section{
 }
 
 .interestsInfo {
-  /* margin-top: -20%; */
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
 }
@@ -262,8 +262,17 @@ body section{
   width: fit-content;
 }
 
+.techList ul li {
+  width: 200%;
+}
+
 .p3 {
   margin-left: -20%;
+}
+
+.p4 {
+  margin-left: -20%;
+  width: 500%;
 }
 
 .contact a {
