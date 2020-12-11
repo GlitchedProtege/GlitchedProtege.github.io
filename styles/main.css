@@ -222,12 +222,16 @@ body section{
 }
 
 .projectDesc {
-  width: 30%;
+  width: 25%;
   padding: 0% 10%;
 }
 
+.githubIcon {
+  width: 10%;
+}
+
 .projectTech {
-  width: 30%;
+  width: 25%;
   padding: 0% 10%;
 }
 
