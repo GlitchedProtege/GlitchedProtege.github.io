@@ -85,6 +85,7 @@ function init() {
   const project2 = document.querySelector('.two')
   const project3 = document.querySelector('.three')
   const project4 = document.querySelector('.four')
+  const project5 = document.querySelector('.five')
   const projects = document.querySelectorAll('.project')
 
   function changeSlide() {
@@ -97,15 +98,17 @@ function init() {
       project2.classList.add('selected')
     } else if (carouselNum === 2) {
       project3.classList.add('selected')
-    } else {
+    } else if (carouselNum === 3) {
       project4.classList.add('selected')
+    } else {
+      project5.classList.add('selected')
     }
   }
 
   changeSlide()
 
   function nextSlide() {
-    if (carouselNum < 3) {
+    if (carouselNum < 4) {
       carouselNum += 1
     } else {
       carouselNum = 0
@@ -118,7 +121,7 @@ function init() {
     if (carouselNum > 0) {
       carouselNum -= 1
     } else {
-      carouselNum = 3
+      carouselNum = 4
     }
     // console.log(carouselNum)
     changeSlide()
